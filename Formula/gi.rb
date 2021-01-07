@@ -2,17 +2,17 @@
 class Gi < Formula
   desc "A simple interactive CLI tool to create a gitignore."
   homepage "https://github.com/uu64/gi"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/uu64/gi/releases/download/v0.2.0/gi_darwin_x86_64.tar.gz"
-    sha256 "b735cb670e2cebc2aa170c5fb22e176d3ca4f92e93243949911f902df40aa458"
+    url "https://github.com/uu64/gi/releases/download/v0.2.1/gi_darwin_x86_64.tar.gz"
+    sha256 "a122d9274b3afb47bc13e59560a4cf5e6d3b72aaddd08ecf9f7cd1f4efb65b4f"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/uu64/gi/releases/download/v0.2.0/gi_linux_x86_64.tar.gz"
-    sha256 "4282b180e02c5d2833c06925db77e54a70b2c50b5cc629339213c8a09856d665"
+    url "https://github.com/uu64/gi/releases/download/v0.2.1/gi_linux_x86_64.tar.gz"
+    sha256 "aff66d27cbfd8bcf242eb73ad57b8079e26ed2bdc4c7aa9daac715d9f71b051d"
   end
 
   def install
