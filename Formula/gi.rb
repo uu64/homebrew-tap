@@ -5,21 +5,21 @@
 class Gi < Formula
   desc "A simple interactive CLI tool to create a gitignore."
   homepage "https://github.com/uu64/gi"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/uu64/gi/releases/download/v0.3.1/gi_darwin_x86_64.tar.gz"
-    sha256 "437c70593742d386dd032110d9e944f5f042236cdb2770186c15751ebfedf3bb"
+    url "https://github.com/uu64/gi/releases/download/v0.3.2/gi_darwin_x86_64.tar.gz"
+    sha256 "c07b9aa5e215f05b8c2d034b2023b26fbd61e6b0f82f69153e774c2dc6c8aaa2"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/uu64/gi/releases/download/v0.3.1/gi_linux_x86_64.tar.gz"
-    sha256 "28b52f278764302dcf3380124ef4b27396a9a769c97303091ef3a15719099894"
+    url "https://github.com/uu64/gi/releases/download/v0.3.2/gi_linux_x86_64.tar.gz"
+    sha256 "dec476df19d652f4b1e364a89213a4a7548605e961fab5fc6d50504bfd12fa4e"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/uu64/gi/releases/download/v0.3.1/gi_linux_arm64.tar.gz"
-    sha256 "ae482cf725758dc12ce93f859152285a031214870cd502436215d1d068282146"
+    url "https://github.com/uu64/gi/releases/download/v0.3.2/gi_linux_arm64.tar.gz"
+    sha256 "c5b628e73510ce74fc83c1107b4d1ca1e2778849a33e6ee955037fad1942f10f"
   end
 
   def install
